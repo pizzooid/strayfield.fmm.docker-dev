@@ -3,7 +3,7 @@ FROM quay.io/fenicsproject/stable:current
 USER root
 WORKDIR /tmp
 
-RUN sudo apt-get update -y && sudo apt-get install -y swig gdb valgrind llvm clang && \
+RUN sudo apt-get update -y && sudo apt-get install -y swig gdb valgrind llvm clang xterm && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
